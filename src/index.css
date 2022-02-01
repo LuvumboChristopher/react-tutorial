@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  background-color: rgb(109, 151, 190);
+  color: whitesmoke;
+}
+
+.bookList {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 5rem auto;
+  display: grid;
+  gap: 2rem;
+}
+
+.book {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.438);
+  border-radius: 15px;
+  padding: 2rem;
+}
+
+.book h2 {
+  margin: 1rem auto;
+  margin: auto;
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .bookList {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
